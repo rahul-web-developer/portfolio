@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import {  Instagram, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -11,7 +11,7 @@ const Header = ({data}) => {
   DeveloperAddress,
   LinkdinUrl,
   InstagramUrl} = data
-  console.log(DeveloperName)
+  
   return (
     <div className="w-full md:min-h-[300px] p-8 bg-[#212428] flex items-center justify-center">
       <div

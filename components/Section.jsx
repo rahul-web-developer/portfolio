@@ -47,7 +47,7 @@ const Section = ({children}) => {
       {
         open && <div className=" bg-white text-black  fixed top-14 flex flex-col p-4 right-2">
           {menus.map((item, index) => 
-          <Link href={item.href}>{item.title}</Link>
+          <Link  key={index} href={item.href}>{item.title}</Link>
           )}
         </div>
       }
@@ -63,6 +63,7 @@ const Section = ({children}) => {
         {
           menus.map((item, index) => (
             <Link 
+            key={index}
             className=" font-semibold text-lg hover:text-[#FF014F]"
             href={item.href}>{item.title}</Link>
           ))
